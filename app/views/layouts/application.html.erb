@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title><%= title ||= 'Site Name' %></title>
+<title><%= @title ||= 'Site Name' %></title>
 <%= csrf_meta_tags %>
 <%= action_cable_meta_tag %>
 <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>

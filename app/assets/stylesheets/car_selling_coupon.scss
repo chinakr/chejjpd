@@ -1,0 +1,42 @@
+// Place all the styles related to the CarSellingCoupon controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+span.field {
+  font-weight: bold;
+}
+span.red {
+  color: red;
+}
+ul.filter {
+  list-style-type: none;
+  margin-left: 0;
+  margin-bottom: 0;
+  line-height: 2em;
+  ul.option {
+    list-style-type: none;
+    margin-left: 0;
+    display: inline;
+    li {
+      display: inline;
+      margin-right: 20px;
+      padding: 5px;
+      background: #eeeeee;
+    }
+  }
+  input.search {
+    display: inline;
+    width: auto;
+    height: 1.75em;
+  }
+}
+.coupon {
+  background: #eeeeee;
+}
+button.button {
+  margin-top: 45%;
+}
