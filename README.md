@@ -1,24 +1,9 @@
-# README
+# Product Design for Chejj Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Chejj, lifecycle services for car users
 
-Things you may want to cover:
+Chejj (also known as Che++) is a venture project which provides lifecyle services for car users. It's services include: driving study, car buying, car insurance, car repair, etc. The users of Chejj are almost all car drivers or people who will soon be car drivers. The automotive industry is great, and Chejj will be the future Da Zhong Dian Ping for automotive industry.
 
-* Ruby version
+Welcome to subscribe Chejj's WeChat official account (`chejj888`):
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Chejj's WeChat official account](app/assets/images/qrcode_for_chejj.jpg)
