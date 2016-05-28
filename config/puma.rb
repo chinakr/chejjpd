@@ -51,7 +51,7 @@ app_dir = File.expand_path("../..", __FILE__)
 shared_dir = "#{app_dir}/shared"
 rails_env = ENV.fetch("RAILS_ENV") { "development" }
 environment rails_env
-bind "unix://#{shared_dir}/sockets/puma.sock" unless rails_env == "development"
+bind "unix://#{shared_dir}/sockets/puma.sock" unless rails_env != "development"
 stdout_redirect "#{shared_dir}/log/puma.stdout.log", "#{shared_dir}/log/puma.stderr.log", true
 pidfile "#{shared_dir}/pids/puma.pid"
 state_path "#{shared_dir}/pids/puma.state"
