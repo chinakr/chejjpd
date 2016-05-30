@@ -30,7 +30,7 @@ set :deploy_to, '/home/deploy/pd.chejj.com.cn/chejjpd'
 
 # Default value for linked_dirs is []
 # set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system')
-# set :linked_dirs, fetch(:linked_dirs, []).push('log', 'shared/log', 'shared/pids', 'shared/sockets', 'tmp/cache', 'tmp/pids', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
+set :linked_dirs, fetch(:linked_dirs, []).push('log', 'shared/log', 'shared/pids', 'shared/sockets', 'tmp/cache')
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
