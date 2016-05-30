@@ -1,2 +1,10 @@
-<h1>CarSellingCoupon#payment</h1>
-<p>Find me in app/views/car_selling_coupon/payment.html.erb</p>
+<% @title = '微信支付' %>
+<div class="column row payment">
+  <div class="callout">
+    <h3>微信支付 <small>6000元</small></h3>
+    <button type="button" class="button">确定</button>
+  </div>
+  <div class="go-to-next-page">
+    <%= link_to '支付完成后进入下一页', car_selling_coupon_contact_path %>
+  </div>
+</div>

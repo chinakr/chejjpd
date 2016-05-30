@@ -1,2 +1,27 @@
-<h1>CarSellingCoupon#contact</h1>
-<p>Find me in app/views/car_selling_coupon/contact.html.erb</p>
+<h1>支付成功<br/>请填写您的联系方式</h1>
+<% @title = '填写联系方式' %>
+<div class="column row contact">
+  <form>
+    <div class="row">
+      <div class="small-3 columns">
+        <label for="name" class="text-right middle">姓名</label>
+      </div>
+      <div class="small-6 columns end">
+        <input type="text" id="name" placeholder="请输入您的姓名" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-3 columns">
+        <label for="mobile" class="text-right middle">手机</label>
+      </div>
+      <div class="small-6 columns end">
+        <input type="text" id="mobile" placeholder="请输入您的手机号" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-9 small-offset-3 columns">
+        <%= link_to '提交', car_selling_coupon_thanks_path, class: 'button' %>
+      </div>
+    </div>
+  </form>
+</div>

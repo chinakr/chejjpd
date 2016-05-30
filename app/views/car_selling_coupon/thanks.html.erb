@@ -1,2 +1,9 @@
-<h1>CarSellingCoupon#thanks</h1>
-<p>Find me in app/views/car_selling_coupon/thanks.html.erb</p>
+<% @title = '感谢您的支持！' %>
+<div class="column row thanks">
+  <div class="callout">
+    <h3>感谢您对比亚迪的支持！</h3>
+    <p>4S店的销售顾问将在48小时内和您联系。</p>
+    <p>汽车团购优惠券已通过微信公众号发送给您。</p>
+  </div>
+  <p><%= link_to '返回首页', car_selling_coupon_index_path %></p>
+</div>

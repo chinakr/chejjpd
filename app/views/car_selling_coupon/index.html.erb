@@ -1,5 +1,5 @@
 <% @title = '汽车团购优惠券' %>
-<div class="column row">
+<div class="column row coupon">
   <h1><%= @title %></h1>
   <ul class="filter">
     <li>
@@ -31,59 +31,61 @@
     </li>
   </ul>
 </div>
-<div class="row">
-  <div class="small-9 columns">
-    <div class="callout coupon">
-      <h3>比亚迪 E6 <small>豪华版</small></h3>
-      <p>
-        <span class="field">面额：</span>6000元<br/>
-        <span class="field">价格：</span><span class="red">500元</span>
-      </p>
+<div class="coupon">
+  <div class="row">
+    <div class="small-9 columns">
+      <div class="callout coupon">
+        <h3>比亚迪 E6 <small>豪华版</small></h3>
+        <p>
+          <span class="field">面额：</span>6000元<br/>
+          <span class="field">价格：</span><span class="red">500元</span>
+        </p>
+      </div>
+    </div>
+    <div class="small-3 columns">
+      <%= link_to '购买', car_selling_coupon_payment_path, class: 'success button' %>
     </div>
   </div>
-  <div class="small-3 columns">
-    <button type="button" class="button">购买</button>
-  </div>
-</div>
-<div class="row">
-  <div class="small-9 columns">
-    <div class="callout coupon">
-      <h3>比亚迪 E6 <small>精英版</small></h3>
-      <p>
-        <span class="field">面额：</span>9000元<br/>
-        <span class="field">价格：</span><span class="red">500元</span>
-      </p>
+  <div class="row">
+    <div class="small-9 columns">
+      <div class="callout coupon">
+        <h3>比亚迪 E6 <small>精英版</small></h3>
+        <p>
+          <span class="field">面额：</span>9000元<br/>
+          <span class="field">价格：</span><span class="red">500元</span>
+        </p>
+      </div>
+    </div>
+    <div class="small-3 columns">
+      <button type="button" class="button">购买</button>
     </div>
   </div>
-  <div class="small-3 columns">
-    <button type="button" class="button">购买</button>
-  </div>
-</div>
-<div class="row">
-  <div class="small-9 columns">
-    <div class="callout coupon">
-      <h3>比亚迪 E5</h3>
-      <p>
-        <span class="field">面额：</span>3000元<br/>
-        <span class="field">价格：</span><span class="red">500元</span>
-      </p>
+  <div class="row">
+    <div class="small-9 columns">
+      <div class="callout coupon">
+        <h3>比亚迪 E5</h3>
+        <p>
+          <span class="field">面额：</span>3000元<br/>
+          <span class="field">价格：</span><span class="red">500元</span>
+        </p>
+      </div>
+    </div>
+    <div class="small-3 columns">
+      <button type="button" class="button">购买</button>
     </div>
   </div>
-  <div class="small-3 columns">
-    <button type="button" class="button">购买</button>
-  </div>
-</div>
-<div class="row">
-  <div class="small-9 columns">
-    <div class="callout coupon">
-      <h3>比亚迪 S7 Plus <small>旗舰版/尊贵版</small></h3>
-      <p>
-        <span class="field">面额：</span>9000元<br/>
-        <span class="field">价格：</span><span class="red">500元</span>
-      </p>
+  <div class="row">
+    <div class="small-9 columns">
+      <div class="callout coupon">
+        <h3>比亚迪 S7 Plus <small>旗舰版/尊贵版</small></h3>
+        <p>
+          <span class="field">面额：</span>9000元<br/>
+          <span class="field">价格：</span><span class="red">500元</span>
+        </p>
+      </div>
     </div>
-  </div>
-  <div class="small-3 columns">
-    <button type="button" class="button">购买</button>
+    <div class="small-3 columns">
+      <button type="button" class="button">购买</button>
+    </div>
   </div>
 </div>
