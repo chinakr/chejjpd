@@ -46,20 +46,20 @@ port        ENV.fetch("PORT") { 3000 }
 # Allow puma to be restarted by `rails restart` command.
 plugin :tmp_restart
 
-workers 2
-app_dir = File.expand_path("../..", __FILE__)    # current
-shared_dir = "#{app_dir}/../../shared"    # root of app
 rails_env = ENV.fetch("RAILS_ENV") { "development" }
 environment rails_env
-if rails_env == "production"
+if rails_env != "development"
+  workers 2
+  app_dir = File.expand_path("../..", __FILE__)    # current
+  shared_dir = "#{app_dir}/../../shared"    # root of app
   bind "unix://#{shared_dir}/tmp/sockets/puma.sock"
   stdout_redirect "#{shared_dir}/log/puma.stdout.log", "#{shared_dir}/log/puma.stderr.log", true
   pidfile "#{shared_dir}/tmp/pids/puma.pid"
   state_path "#{shared_dir}/tmp/pids/puma.state"
-end
-activate_control_app
-on_worker_boot do
-  require "active_record"
-  ActiveRecord::Base.connection.disconnect! rescue ActiveRecord::ConnectionNotEstablished
-  ActiveRecord::Base.establish_connection(YAML.load_file("#{app_dir}/config/database.yml")[rails_env])
+  activate_control_app
+  on_worker_boot do
+    require "active_record"
+    ActiveRecord::Base.connection.disconnect! rescue ActiveRecord::ConnectionNotEstablished
+    ActiveRecord::Base.establish_connection(YAML.load_file("#{app_dir}/config/database.yml")[rails_env])
+  end
 end
