@@ -39,6 +39,7 @@ gem 'jbuilder', '~> 2.0'
 
 # Use Mina for deployment
 gem 'mina', group: :development
+gem 'mina-puma', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
