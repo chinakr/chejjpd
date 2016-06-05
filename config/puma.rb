@@ -47,8 +47,8 @@ port        ENV.fetch("PORT") { 3000 }
 plugin :tmp_restart
 
 workers 2
-app_dir = File.expand_path("../../..", __FILE__)    # parent of current, root of app
-shared_dir = "#{app_dir}/shared"
+app_dir = File.expand_path("../..", __FILE__)    # current
+shared_dir = "#{app_dir}/../../shared"    # root of app
 rails_env = ENV.fetch("RAILS_ENV") { "development" }
 environment rails_env
 bind "unix://#{shared_dir}/tmp/sockets/puma.sock" unless rails_env != "development"
